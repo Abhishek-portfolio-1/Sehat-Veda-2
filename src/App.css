@@ -1,0 +1,24 @@
+@import 'tailwindcss';
+
+.t-icon{
+  border-radius: 50%;
+}
+
+@keyframes bounceInfinite {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.bounce-button {
+  animation: bounceInfinite 1s infinite;
+  transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.bounce-button:hover {
+  transform: scale(1.05);
+  background-color: #046a2f;
+}
